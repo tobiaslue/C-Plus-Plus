@@ -21,4 +21,4 @@ jobs:
           execute-command: "./TestLibrary"
           clean-command: "sudo make clean"
           default-branch: "master"
-          repository-url: "git@github.com:tobiaslue/tainted-code-filtering-action.git"
+          repository-url: "git@github.com:tobiaslue/C-Plus-Plus.git"
