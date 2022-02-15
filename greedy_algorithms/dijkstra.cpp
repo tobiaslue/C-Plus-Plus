@@ -38,7 +38,7 @@ int minDistance(int mdist[], bool vset[], int V) {
     for (int i = 0; i < V; i++) {
         if (!vset[i] && (mdist[i] < minVal)) {
             minVal = mdist[i];
-            minInd = i;
+            minInd = i + 1;
         }
     }
 
