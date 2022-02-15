@@ -21,4 +21,4 @@ jobs:
           execute-command: "./TestLibrary"
           clean-command: "sudo make clean"
           default-branch: "master"
-          repository-url: "git@github.com:tobiaslue/C-Plus-Plus.git"
+          repository-url: "https://github.com/tobiaslue/C-Plus-Plus.git"
