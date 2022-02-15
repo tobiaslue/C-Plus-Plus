@@ -1,6 +1,6 @@
 name: Awesome CI Workflow
 
-on: [push, pull_request]
+on: []
 #   push:
 #     branches: [ master ]
 #   pull_request:
