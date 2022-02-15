@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Run TaintImpact
-        uses: ./ # Uses an action in the root directory
+        uses: tobiaslue/tainted-code-filtering-action@v0.1
         id: build_taint_impact
         with:
           config-command: "sudo cmake \
