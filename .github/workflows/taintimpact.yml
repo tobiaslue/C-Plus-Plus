@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Run TaintImpact
-        uses: tobiaslue/tainted-code-filtering-action@v0.1
+        uses: tobiaslue/tainted-code-filtering-action@v0.11
         id: build_taint_impact
         with:
           config-command: "sudo cmake \
@@ -21,3 +21,4 @@ jobs:
           execute-command: "./TestLibrary"
           clean-command: "sudo make clean"
           default-branch: "master"
+          repository-url: "git@github.com:tobiaslue/tainted-code-filtering-action.git"
