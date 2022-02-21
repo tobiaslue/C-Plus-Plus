@@ -151,7 +151,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>                       {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> j = 2;  <span class="comment">// to access all elements of the array starting from 1</span></div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> j = 1;  <span class="comment">// to access all elements of the array starting from 1</span></div>
 <div class="line"><span class="lineno">   17</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> = a[0];</div>
 <div class="line"><span class="lineno">   18</span>    <span class="keywordflow">while</span> (j &lt; n) {</div>
 <div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (a[j] % <a class="code hl_function" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> == 0)  <span class="comment">// value of gcd is as needed so far</span></div>
@@ -188,20 +188,25 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p >Main function </p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>           {</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n:&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">int</span> n = 6;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">//std::cout &lt;&lt; &quot;Enter value of n:&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   31</span>    <span class="comment">//std::cin &gt;&gt; n;</span></div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordtype">int</span> *a = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the n numbers:&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) std::cin &gt;&gt; a[i];</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;GCD of entered n numbers:&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>(a, n) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keyword">delete</span>[] a;</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
+<div class="line"><span class="lineno">   33</span>    a[0] = 126;</div>
+<div class="line"><span class="lineno">   34</span>    a[1] = 57684;</div>
+<div class="line"><span class="lineno">   35</span>    a[2] = 8454;</div>
+<div class="line"><span class="lineno">   36</span>    a[3] = 78;</div>
+<div class="line"><span class="lineno">   37</span>    a[4] = 831;</div>
+<div class="line"><span class="lineno">   38</span>    a[5] = 901478;</div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// int i;</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// std::cout &lt;&lt; &quot;Enter the n numbers:&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// for (i = 0; i &lt; n; i++) std::cin &gt;&gt; a[i];</span></div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;GCD of entered n numbers:&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>(a, n) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">delete</span>[] a;</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   47</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
